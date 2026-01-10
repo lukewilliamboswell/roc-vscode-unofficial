@@ -60,11 +60,23 @@
         "properties": {
           "roc-lang.language-server.exe": {
             "type": "string",
-            "description": "Path to the language server executable"
+            "description": "Path to the language server executable (e.g., /path/to/roc)"
+          },
+          "roc-lang.language-server.args": {
+            "type": "array",
+            "items": { "type": "string" },
+            "default": [],
+            "description": "Arguments to pass to the language server (e.g., [\"experimental-lsp\", \"--debug-transport\"])"
           },
           "roc-lang.language-server.debug-exe": {
             "type": "string",
             "description": "Path to the debug language server executable"
+          },
+          "roc-lang.language-server.debug-args": {
+            "type": "array",
+            "items": { "type": "string" },
+            "default": [],
+            "description": "Arguments for the debug language server"
           }
         }
       }
