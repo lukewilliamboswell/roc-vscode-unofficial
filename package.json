@@ -41,6 +41,25 @@
         "path": "./syntaxes/roc.tmLanguage.json"
       }
     ],
+    "semanticTokenScopes": [
+      {
+        "language": "roc",
+        "scopes": {
+          "namespace": ["entity.name.namespace"],
+          "type": ["entity.name.type", "support.type"],
+          "parameter": ["variable.parameter"],
+          "variable": ["variable.other"],
+          "property": ["variable.other.property"],
+          "enumMember": ["variable.other.enummember", "constant.other.enum"],
+          "function": ["entity.name.function"],
+          "keyword": ["keyword.control", "keyword"],
+          "string": ["string.quoted", "string"],
+          "number": ["constant.numeric"],
+          "operator": ["keyword.operator"],
+          "comment": ["comment"]
+        }
+      }
+    ],
     "commands": [
       {
         "command": "roc-lang-unofficial.ls-start",
